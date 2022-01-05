@@ -139,24 +139,3 @@ class ForestTimer:
         node.text = name
         node.update()
         self.node_at_line[line_number] = node
-
-
-
-ft = ForestTimer()
-
-for i in ft(range(100)):
-    for j in ft(range(100)):
-        ft.step(f'{i}, {j}')
-        ft.step(f'{i}, {j}')
-        ft.step(f'{i}, {j}')
-        ft.step(f'{i}, {j}')
-
-    for j in ft(range(100)):
-        ft.step(f'{i}, {j}')
-
-# for i in range(10):
-#     for j in range(10):
-#         ft.step(f'{i}, {j}')
-#         ft.step(f'{i}, {j}')
-#         ft.step(f'{i}, {j}')
-#         ft.step(f'{i}, {j}')
